@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/pushup_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/pushup" />
+
+    <ImageButton
+        android:id="@+id/plank_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/plank" />
+
+    <ImageButton
+        android:id="@+id/armCircles_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/armcircles" />
+
+    <ImageButton
+        android:id="@+id/triceps_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/triceps" />
+
+</LinearLayout>

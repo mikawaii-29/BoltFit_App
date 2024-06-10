@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/jumping_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/jumping" />
+
+    <ImageButton
+        android:id="@+id/highkness_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/highkness" />
+
+    <ImageButton
+        android:id="@+id/frog_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/frog" />
+
+    <ImageButton
+        android:id="@+id/butt_btn"
+        android:layout_width="342dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/butt" />
+
+</LinearLayout>

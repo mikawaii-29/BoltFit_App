@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BoltFit_FitnessApp</string>
+    <string name="signup_for_free">SIGNUP for FREE</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="signup">SIGNUP</string>
+    <string name="enter_your_fullname">Enter your FullName</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="please_login_with_your_account">Please login with your account</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="start">Start</string>
+    <string name="home">HOME</string>
+    <string name="fitness_journey">FITNESS JOURNEY</string>
+    <string name="settings">SETTINGS</string>
+    <string name="logout">LOGOUT</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="michaela_osayan">MICHAELA OSAYAN</string>
+    <string name="micachuchus29_gmail_com">micachuchus29@gmail.com</string>
+    <string name="workouts">WORKOUTS</string>
+    <string name="upper_body_workout">UPPER BODY WORKOUT</string>
+
+</resources>
