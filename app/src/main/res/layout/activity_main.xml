@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="182dp"
         android:layout_height="57dp"
         android:layout_marginTop="5dp"
@@ -61,7 +61,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/emailText"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
@@ -84,7 +84,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextText1"
+            android:id="@+id/nameText"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
@@ -107,7 +107,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/usernameText"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
@@ -130,7 +130,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/passwordText"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
@@ -186,7 +186,7 @@
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView8"
