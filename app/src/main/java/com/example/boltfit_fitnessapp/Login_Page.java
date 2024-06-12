@@ -1,4 +1,5 @@
 package com.example.boltfit_fitnessapp;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,12 +19,15 @@ public class Login_Page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_page);
 
         db = new DatabaseHelper(this);
+
+        // Ensure these IDs match your XML layout
         username = findViewById(R.id.usernameText);
         password = findViewById(R.id.passwordText);
         loginButton = findViewById(R.id.loginButton);
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,17 +36,14 @@ public class Login_Page extends AppCompatActivity {
                 String pass = password.getText().toString();
                 if (db.checkUser(user, pass)) {
                     Toast.makeText(Login_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                    // Proceed to next activity if login is successful
+                    startActivity(new Intent(Login_Page.this, Dashboard.class));
                 } else {
                     Toast.makeText(Login_Page.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Login_Page.this, RegisterActivity.class));
-            }
-        });
     }
 }
+

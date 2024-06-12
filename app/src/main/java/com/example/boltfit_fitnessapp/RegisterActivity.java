@@ -22,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         db = new DatabaseHelper(this);
         name = findViewById(R.id.nameText);
-        email = findViewById(R.id.emailText);
+        email = findViewById(R.id.usernameText);
         newUsername = findViewById(R.id.usernameText);
         newPassword = findViewById(R.id.passwordText);
         registerNewUserButton = findViewById(R.id.loginButton);

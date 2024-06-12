@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -61,7 +61,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/emailText"
+            android:id="@+id/usernameText"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
