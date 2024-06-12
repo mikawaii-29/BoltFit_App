@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 String userPassword = newPassword.getText().toString();
                 if (db.insertUser(userName, userEmail, userUsername, userPassword)) {
                     Toast.makeText(MainActivity.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, Login_Page.class));
                     finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
     }
 }

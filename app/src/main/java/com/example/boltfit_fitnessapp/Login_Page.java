@@ -1,4 +1,5 @@
 package com.example.boltfit_fitnessapp;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,15 +13,16 @@ public class Login_Page extends AppCompatActivity {
 
     DatabaseHelper db;
     EditText username, password;
-    Button loginButton, registerButton;
+    Button loginButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_page);
 
         db = new DatabaseHelper(this);
+
         username = findViewById(R.id.usernameText);
         password = findViewById(R.id.passwordText);
         loginButton = findViewById(R.id.loginButton);
@@ -37,12 +39,6 @@ public class Login_Page extends AppCompatActivity {
                 }
             }
         });
-
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Login_Page.this, MainActivity.class));
-            }
-        });
     }
 }
+

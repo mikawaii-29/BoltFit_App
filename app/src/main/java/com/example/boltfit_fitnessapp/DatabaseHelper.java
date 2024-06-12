@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "boltfitDB.db";
+    private static final String DATABASE_NAME = "bolfitDB.db";
     private static final String TABLE_NAME = "useraccount";
     private static final String COL_1 = "id";
     private static final String COL_2 = "name";
