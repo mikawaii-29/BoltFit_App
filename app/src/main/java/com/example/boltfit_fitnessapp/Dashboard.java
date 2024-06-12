@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
@@ -25,6 +26,7 @@ public class Dashboard extends AppCompatActivity {
     ActionBarDrawerToggle drawerToggle;
     ImageView menuBtn;
     ImageButton upperbodyBtn, lowerbodyBtn, cardioBtn, stretchBtn;
+    TextView workoutName;
 
     private LinearLayout scrollContent;
     private LayoutInflater inflater;
@@ -38,6 +40,7 @@ public class Dashboard extends AppCompatActivity {
         scrollContent = findViewById(R.id.scroll_content);
         inflater = LayoutInflater.from(this);
 
+        workoutName = findViewById(R.id.workout_name);
         upperbodyBtn = findViewById(R.id.upperbody_contentBtn);
         lowerbodyBtn = findViewById(R.id.lowerbody_contentBtn);
         cardioBtn = findViewById(R.id.cardio_contentBtn);
@@ -59,7 +62,7 @@ public class Dashboard extends AppCompatActivity {
         upperbodyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-
+                workoutName.setText("UPPER BODY WORKOUT");
                 updateScrollViewContent(R.layout.layout_upperbody);
             }
         });
@@ -67,7 +70,7 @@ public class Dashboard extends AppCompatActivity {
         lowerbodyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                workoutName.setText("LOWER BODY WORKOUT");
                 updateScrollViewContent(R.layout.layout_lowerbody);
             }
         });
@@ -75,7 +78,7 @@ public class Dashboard extends AppCompatActivity {
         cardioBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                workoutName.setText("CARDIO WORKOUT");
                 updateScrollViewContent(R.layout.layout_cardio);
             }
         });
@@ -83,7 +86,7 @@ public class Dashboard extends AppCompatActivity {
         stretchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                workoutName.setText("STRETCHING WORKOUT");
                 updateScrollViewContent(R.layout.layout_stretch);
             }
         });
