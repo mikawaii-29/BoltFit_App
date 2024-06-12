@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/loginButton1"
         android:layout_width="182dp"
         android:layout_height="57dp"
         android:layout_marginTop="5dp"
@@ -61,7 +61,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/emailText"
+            android:id="@+id/usernameText1"
             android:layout_width="343dp"
             android:layout_height="45dp"
             android:layout_marginTop="11dp"
