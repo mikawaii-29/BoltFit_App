@@ -46,6 +46,7 @@ public class Dashboard extends AppCompatActivity {
         if (username != null) {
             textView10.setText("Hi " + username + "!");
         }
+        displayUserDetails();
     }
 
     private void initializeViews() {
@@ -74,7 +75,6 @@ public class Dashboard extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         name = headerView.findViewById(R.id.nameText1);
         email = headerView.findViewById(R.id.emailText1);
-        displayUserDetails();
         menuBtn.setOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
     }
 
