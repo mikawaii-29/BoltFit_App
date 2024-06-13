@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
+            if (db.checkUsernameExists(userUsername)) {
+                Toast.makeText(MainActivity.this, "Username is already taken", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             boolean isInserted = db.insertUser(userName, userEmail, userUsername, userPassword);
             if (isInserted) {
                 Toast.makeText(MainActivity.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
