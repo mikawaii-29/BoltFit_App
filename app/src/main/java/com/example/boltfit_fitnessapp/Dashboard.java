@@ -36,8 +36,6 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        initializeViews();
-        setupNavigationDrawer();
         scrollContent = findViewById(R.id.scroll_content);
         inflater = LayoutInflater.from(this);
 
@@ -57,6 +55,20 @@ public class Dashboard extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
+        initializeViews();
+        setupNavigationDrawer();
+
+        db = new DatabaseHelper(this);
+        username = getIntent().getStringExtra("username");
+
+        if (username != null) {
+            textView10.setText("Hi " + username + "!");
+            int userId = db.getUserIdByUsername(username);
+
+
+        }
+
+        displayUserDetails();
         menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,12 +79,6 @@ public class Dashboard extends AppCompatActivity {
         setupExerciseButtons();
         setupContentButtons();
 
-        db = new DatabaseHelper(this);
-        username = getIntent().getStringExtra("username");
-
-        if (username != null) {
-            textView10.setText("Hi " + username + "!");
-        }
     }
 
     private void initializeViews() {
@@ -90,9 +96,9 @@ public class Dashboard extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         name = headerView.findViewById(R.id.nameText1);
         email = headerView.findViewById(R.id.emailText1);
-        displayUserDetails();
         menuBtn.setOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
     }
+
 
     private void displayUserDetails() {
         if (username != null && !username.isEmpty()) {

@@ -70,7 +70,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return false;
         }
     }
-
+    public boolean checkUsernameExists(String username) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_USER_ACCOUNT, new String[]{COLUMN_ID}, COLUMN_USERNAME + "=?", new String[]{username}, null, null, null);
+        boolean exists = cursor.getCount() > 0;
+        cursor.close();
+        return exists;
+    }
     public String[] getUserDetailsByUsername(String username) {
         String query = "SELECT " + COLUMN_NAME + ", " + COLUMN_EMAIL + " FROM " + TABLE_USER_ACCOUNT + " WHERE " + COLUMN_USERNAME + " = ?";
         String[] selectionArgs = {username};
@@ -104,6 +110,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             Log.e("DatabaseHelper", "Error printing users", e);
         }
     }
+
+    public int getUserIdByUsername(String username) {
+        int userId = -1;  // Default value if the user is not found
+        String query = "SELECT " + COLUMN_ID + " FROM " + TABLE_USER_ACCOUNT + " WHERE " + COLUMN_USERNAME + " = ?";
+        String[] selectionArgs = {username};
+
+        try (SQLiteDatabase db = this.getReadableDatabase();
+             Cursor cursor = db.rawQuery(query, selectionArgs)) {
+
+            if (cursor.moveToFirst()) {
+                userId = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID));
+            }
+        } catch (Exception e) {
+            Log.e("DatabaseHelper", "Error retrieving user ID", e);
+        }
+
+        return userId;
+    }
+    public boolean updateUserById(int id, String name, String username, String password) {
+        try (SQLiteDatabase db = this.getWritableDatabase()) {
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(COLUMN_NAME, name);
+            contentValues.put(COLUMN_USERNAME, username);
+            contentValues.put(COLUMN_PASSWORD, password);
+
+            int result = db.update(TABLE_USER_ACCOUNT, contentValues, COLUMN_ID + " = ?", new String[]{String.valueOf(id)});
+            return result > 0;
+        } catch (Exception e) {
+            Log.e("DatabaseHelper", "Error updating user", e);
+            return false;
+        }
+    }
+
 }
 
 
