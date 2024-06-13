@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-
-        <item android:id="@+id/home"
-            android:icon="@drawable/home"
-            android:title="@string/home"
-            />
-        <item android:id="@+id/fitness_journal"
-            android:icon="@drawable/journal"
-            android:title="@string/fitness_journey"
-            />
-        <item android:id="@+id/settings"
-            android:icon="@drawable/settings"
-            android:title="@string/settings"
-            />
-        <item android:id="@+id/logout"
-            android:icon="@drawable/logout"
-            android:title="@string/logout"
-            />
-    </group>
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/fitness_journal"
+        android:title="Fitness Journal"
+        android:icon="@drawable/journal" />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings" />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout" />
 </menu>

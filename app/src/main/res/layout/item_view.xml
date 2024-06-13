@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleoutput"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_extrabold"
+        tools:text="My title"/>
+
+    <TextView
+        android:id="@+id/descriptionoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleoutput"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#97000000"
+        android:textSize="18sp"
+        tools:text="My long description" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeoutput"
+        android:layout_below="@+id/descriptionoutput"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
+        android:gravity="end"
+        android:textColor="#8F000000"
+        tools:text="June 14, 2024"/>
+
+</RelativeLayout>

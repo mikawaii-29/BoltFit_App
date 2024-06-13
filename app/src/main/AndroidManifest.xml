@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions for Internet access (if needed) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions for reading and writing to external storage (if needed) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +20,58 @@
         android:theme="@style/Theme.BoltFit_FitnessApp"
         tools:targetApi="31">
         <activity
+            android:name=".AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DownwardDog_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Shoulder_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Calf_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".QuadStretch_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".ButtKickers_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".FrogJumps_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".HighKnees_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Donkey_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Glute_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Lunges_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Squats_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".TricepDips_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".ArmCircles_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Plank_Exercise"
+            android:exported="false" />
+        <activity
             android:name=".Pushup_Exercise"
             android:exported="false" />
         <activity
             android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Jumping_Exercise"
             android:exported="true" />
         <activity
             android:name=".Login_Page"
@@ -39,13 +93,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
-    <!-- Permissions for Internet access (if needed) -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Permissions for reading and writing to external storage (if needed) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/pushup_btn"
+        android:id="@+id/pushup_BTN"
         android:layout_width="342dp"
         android:layout_height="125dp"
         android:background="@android:color/transparent"
@@ -13,7 +13,7 @@
         android:src="@drawable/pushup" />
 
     <ImageButton
-        android:id="@+id/plank_btn"
+        android:id="@+id/plank_BTN"
         android:layout_width="342dp"
         android:layout_height="125dp"
         android:layout_marginTop="10dp"
@@ -22,7 +22,7 @@
         android:src="@drawable/plank" />
 
     <ImageButton
-        android:id="@+id/armCircles_btn"
+        android:id="@+id/armCircles_BTN"
         android:layout_width="342dp"
         android:layout_height="125dp"
         android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
         android:src="@drawable/armcircles" />
 
     <ImageButton
-        android:id="@+id/triceps_btn"
+        android:id="@+id/triceps_BTN"
         android:layout_width="342dp"
         android:layout_height="125dp"
         android:layout_marginTop="10dp"

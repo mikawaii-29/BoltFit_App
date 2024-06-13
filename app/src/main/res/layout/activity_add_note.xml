@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddNoteActivity">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:text="Add new journey"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Upload Image"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleinput"
+            android:textColor="@color/white"
+            android:hint="Title"
+            android:padding="10dp"
+            android:background="#3086b6f6"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptioninput"
+            android:textColor="@color/white"
+            android:hint="Description"
+            android:padding="10dp"
+            android:background="#3086b6f6"
+            android:layout_margin="10dp"
+            android:lines="10"
+            android:layout_gravity="top"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE JOURNAL"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg_white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

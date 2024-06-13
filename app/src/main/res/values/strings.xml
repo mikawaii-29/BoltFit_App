@@ -27,5 +27,48 @@
     <string name="micachuchus29_gmail_com">micachuchus29@gmail.com</string>
     <string name="workouts">WORKOUTS</string>
     <string name="upper_body_workout">UPPER BODY WORKOUT</string>
+    <string name="pushup_exercise">PushUp Exercise</string>
+    <string name="push_instruction">Start Position: Hands slightly wider than shoulders, body in a straight line from head to heels.\n\nLower: Bend elbows, lower chest to just above the floor.\n\nPush Up: Straighten arms, returning to start position.\n\nBreathing: Inhale down, exhale up.\n\nReps: Complete 30 push-ups.</string>
+    <string name="push_up_instructions">Push-Up Instructions:</string>
+    <string name="plank_exercise">Plank Exercise</string>
+    <string name="plank_instruction">Plank Instructions:</string>
+    <string name="plank_instructions">Position: Forearms on the ground, elbows under shoulders, legs straight back.\n\nHold: Keep body in a straight line, engage core.\n\nTime: Hold for 30 seconds to 1 minute.</string>
+    <string name="arm_circle_exercise">Arm Circle Exercise</string>
+    <string name="arm_circles_instruction">Arm Circles Instructions:</string>
+    <string name="arm_circles_instructions">Position: Stand with arms extended out to the sides.\n\nCircles:Make small circles with your arms.\n\nDirection: Perform for 30 seconds, then switch direction.</string>
+    <string name="tricep_dips_instruction">Tricep Dips Instructions:</string>
+    <string name="tricep_dips_intructions">Position: Sit on the edge of a chair, hands gripping the edge, legs extended.\n\nLower: Bend elbows to lower your body.\n\nPush Up: Straighten arms to return to the start.\n\nReps: Complete 10-15 reps.</string>
+    <string name="tricep_dips_exercise">Tricep Dips Exercise</string>
+    <string name="squats_instructions">Position: Stand with feet shoulder-width apart.\n\nLower: Bend knees and hips, lowering your body.\n\nPush Up: Straighten legs to return to standing.\n\nReps: Complete 15-20 reps.</string>
+    <string name="squats_instruction">Squats Instructions:</string>
+    <string name="squats_exercise">Squats Exercise</string>
+    <string name="lunges_instruction">Lunges Instructions:</string>
+    <string name="lunges_instructions">Position: Stand with feet hip-width apart.\n\nStep: Take a big step forward with one leg.\n\nLower: Bend both knees to lower your body.\n\nPush Back: Push through the front heel to return to standing.\n\nReps: Complete 10-12 reps per leg.</string>
+    <string name="glute_bridges_exercise">Glute Bridges Exercise</string>
+    <string name="glute_instruction">Glute Bridges Instructions:</string>
+    <string name="glute_instructions">Position: Lie on your back with knees bent, feet flat on the floor.\n\nLift: Press through your heels to lift your hips towards the ceiling.\n\nSqueeze: Contract your glutes at the top.\n\n
+Lower: Lower your hips back down.\n\nReps: Complete 15-20 reps.</string>
+    <string name="donkey_kicks_exercise">Donkey Kicks Exercise</string>
+    <string name="donkey_instruction">Donkey Kicks Instructions:</string>
+    <string name="donkey_instructions">Position: Start on all fours with hands under shoulders and knees under hips.\n\nKick: Lift one leg, keeping the knee bent, and push the sole of your foot toward the ceiling.\n\nLower: Lower the leg back down without touching the floor.\n\nReps: Complete 12-15 reps per leg.\n\n
+</string>
+    <string name="jumping_instruction">Jumping Jacks Instructions:</string>
+    <string name="jumping_instructions">Start Position: Stand with feet together, arms at your sides.\n\nJump: Jump up, spreading your legs wide and raising your arms overhead.\n\nLand: Jump back to the starting position with feet together and arms at your sides.\n\nReps: Perform continuously for 1-2 minutes.</string>
+    <string name="highknees_instruction">High Kness Instruction:</string>
+    <string name="highknees_instructions">Start Position: Stand tall with feet hip-width apart.\n\nRun in Place: Lift one knee at a time towards your chest, alternating quickly.\n\nArms: Swing your arms in rhythm with your knees.\n\nReps: Perform continuously for 1-2 minutes.\n\n</string>
+    <string name="frog_instruction">Frog Jumps Instructions:</string>
+    <string name="frog_instructions">Start Position: Stand with feet shoulder-width apart, toes slightly turned out.\n\nLower: Squat down, touching the floor with your hands.\n\nJump: Explosively jump forward, reaching arms overhead.\n\nLand: Land softly and immediately squat down for the next jump.\n\nReps: Perform 10-12 reps.</string>
+    <string name="buttkickers_instruction">Butt Kickers Instructions:</string>
+    <string name="buttkickers_instructions">Start Position: Stand tall with feet hip-width apart.\n\nRun in Place: Jog in place, kicking your heels up towards your glutes.\n\nArms: Swing your arms naturally as you run.\n\nReps: Perform continuously for 1-2 minutes.</string>
+    <string name="quadstretch_instruction">Quad Stretch Instructions:</string>
+    <string name="quadstretch_instructions">Position: Stand on one leg, holding onto a wall for balance if needed.\n\nGrab Ankle: Pull your other foot towards your glutes, holding your ankle.\n\nHold: Keep knees close together and hold the stretch.\n\nTime: Hold for 20-30 seconds per leg
+</string>
+    <string name="calfstretch_instruction">Calf Stretch Instructions:</string>
+    <string name="calfstretch_instructions">Position: Stand facing a wall, arms extended for support.\n\nStep Back: Place one foot behind you, keeping heel on the ground.\n\nLean Forward: Lean forward, pressing hips towards the wall.\n\nHold: Hold the stretch, feeling it in your calf muscle.\n\nTime: Hold for 20-30 seconds per leg.</string>
+    <string name="shoulder_instruction">Shoulder Stretch Exercise</string>
+    <string name="shoulder_instructions">Position: Stand tall with feet hip-width apart.\n\nCross Arm: Bring one arm across your chest.\n\nSupport: Use your other arm to gently press the crossed arm closer to your body.\n\nHold: Hold the stretch, feeling it in your shoulder and upper back.\n\nTime: Hold for 20-30 seconds per arm.</string>
+    <string name="downward_instruction">Downward Dog Instructions:</string>
+    <string name="downward_instructions">Position: Start on your hands and knees (like a tabletop).\n\nLift Hips: Press through your palms and lift your hips towards the ceiling.\n\nForm an Inverted V: Straighten your legs as much as possible, forming an inverted V shape with your body.\n\nHeelsDown: Try to press your heels towards the floor.\n\nHold: Hold the stretch, feeling it in your calves, hamstrings, and back.\n\nTime: Hold for 20-30 seconds.</string>
+
 
 </resources>

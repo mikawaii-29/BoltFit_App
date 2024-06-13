@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Lunges_Exercise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="115dp"
+                android:text="Lunges Exercise"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <VideoView
+                android:id="@+id/lunges_vid"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+
+            <Button
+                android:id="@+id/lunges_startBtn"
+                android:layout_width="182dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="115dp"
+                android:background="@drawable/btn_bg_white"
+                android:text="@string/start"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/lunges_instruction"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/black">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/black">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/alata"
+                        android:text="@string/lunges_instructions"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

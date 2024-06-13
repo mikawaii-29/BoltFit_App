@@ -60,16 +60,17 @@
             app:layout_constraintTop_toBottomOf="@+id/textView10"
             app:srcCompat="@drawable/boltfit" />
 
+
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="344dp"
-            android:layout_height="140dp"
-            android:layout_marginStart="32dp"
+            android:layout_width="347dp"
+            android:layout_height="133dp"
             android:layout_marginTop="48dp"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="@+id/menu_button"
+            app:layout_constraintHorizontal_bias="0.928"
+            app:layout_constraintStart_toStartOf="@+id/profile"
             app:layout_constraintTop_toBottomOf="@+id/imageView8"
             app:srcCompat="@drawable/welcome" />
 
@@ -88,20 +89,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
+
+
         <TextView
             android:id="@+id/workout_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/montserrat_extrabold"
             android:text="@string/upper_body_workout"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintHorizontal_bias="0.171"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
@@ -160,7 +165,7 @@
 
         <ScrollView
             android:layout_width="344dp"
-            android:layout_height="300dp"
+            android:layout_height="290dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
@@ -178,6 +183,7 @@
                     android:id="@+id/pushup_btn"
                     android:layout_width="342dp"
                     android:layout_height="125dp"
+                    android:layout_marginTop="10dp"
                     android:background="@android:color/transparent"
                     android:scaleType="centerInside"
                     app:srcCompat="@drawable/pushup" />
@@ -212,15 +218,15 @@
             </LinearLayout>
         </ScrollView>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
-        android:id="@+id/nav_view"
         android:layout_gravity="start"/>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
