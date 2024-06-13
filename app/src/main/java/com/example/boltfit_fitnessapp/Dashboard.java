@@ -46,8 +46,6 @@ public class Dashboard extends AppCompatActivity {
         if (username != null) {
             textView10.setText("Hi " + username + "!");
         }
-
-        displayUserDetails();
     }
 
     private void initializeViews() {
@@ -65,7 +63,7 @@ public class Dashboard extends AppCompatActivity {
 
         name = findViewById(R.id.nameText1);
         email = findViewById(R.id.emailText1);
-        textView10 = findViewById(R.id.textView10); // Ensure this ID matches your layout
+        textView10 = findViewById(R.id.textView10);
     }
 
     private void setupNavigationDrawer() {
@@ -73,6 +71,10 @@ public class Dashboard extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
+        View headerView = navigationView.getHeaderView(0);
+        name = headerView.findViewById(R.id.nameText1);
+        email = headerView.findViewById(R.id.emailText1);
+        displayUserDetails();
         menuBtn.setOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
     }
 
@@ -118,4 +120,5 @@ public class Dashboard extends AppCompatActivity {
         scrollContent.addView(newContent);
     }
 }
+
 
