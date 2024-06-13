@@ -36,8 +36,6 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        initializeViews();
-        setupNavigationDrawer();
         scrollContent = findViewById(R.id.scroll_content);
         inflater = LayoutInflater.from(this);
 
@@ -57,6 +55,17 @@ public class Dashboard extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
+        initializeViews();
+        setupNavigationDrawer();
+
+        db = new DatabaseHelper(this);
+        username = getIntent().getStringExtra("username");
+
+        if (username != null) {
+            textView10.setText("Hi " + username + "!");
+        }
+
+
         menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,12 +76,6 @@ public class Dashboard extends AppCompatActivity {
         setupExerciseButtons();
         setupContentButtons();
 
-        db = new DatabaseHelper(this);
-        username = getIntent().getStringExtra("username");
-
-        if (username != null) {
-            textView10.setText("Hi " + username + "!");
-        }
     }
 
     private void initializeViews() {

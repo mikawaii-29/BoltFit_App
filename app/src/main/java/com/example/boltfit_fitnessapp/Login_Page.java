@@ -35,13 +35,11 @@ public class Login_Page extends AppCompatActivity {
             String user = username.getText().toString().trim();
             String pass = password.getText().toString().trim();
 
-            if (user.isEmpty() || pass.isEmpty()) {
-                Toast.makeText(Login_Page.this, "Please enter both username and password", Toast.LENGTH_SHORT).show();
-                return;
-            }
             if (db.checkUser(user, pass)) {
                 Toast.makeText(Login_Page.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login_Page.this, Dashboard.class));
+                Intent intent = new Intent(Login_Page.this, Dashboard.class);
+                intent.putExtra("username", user); // Pass the username
+                startActivity(intent);
             } else {
                 Toast.makeText(Login_Page.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
             }
