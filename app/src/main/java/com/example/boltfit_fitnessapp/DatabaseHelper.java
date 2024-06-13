@@ -71,6 +71,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public String[] getUserDetailsByUsername(String username) {
+        String query = "SELECT " + COLUMN_NAME + ", " + COLUMN_EMAIL + " FROM " + TABLE_USER_ACCOUNT + " WHERE " + COLUMN_USERNAME + " = ?";
+        String[] selectionArgs = {username};
+        String[] userDetails = new String[2];
+
+        try (SQLiteDatabase db = this.getReadableDatabase();
+             Cursor cursor = db.rawQuery(query, selectionArgs)) {
+
+            if (cursor.moveToFirst()) {
+                userDetails[0] = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME));
+                userDetails[1] = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_EMAIL));
+            }
+        } catch (Exception e) {
+            Log.e("DatabaseHelper", "Error retrieving user details", e);
+        }
+        return userDetails;
+    }
+
     public void printAllUsers() {
         String query = "SELECT * FROM " + TABLE_USER_ACCOUNT;
 
