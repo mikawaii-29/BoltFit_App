@@ -224,12 +224,7 @@ public class Dashboard extends AppCompatActivity {
             ImageButton lungesBtn = newContent.findViewById(R.id.lunges_btn);
             ImageButton gluteBtn = newContent.findViewById(R.id.glute_btn);
             ImageButton donkeyBtn = newContent.findViewById(R.id.donkey_btn);
-            squatsBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(Dashboard.this, Squats_Exercise.class));
-                }
-            });
+            squatsBtn.setOnClickListener(v -> startActivity(new Intent(Dashboard.this, Squats_Exercise.class)));
             lungesBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
